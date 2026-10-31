@@ -1,0 +1,46 @@
+###
+GET http://127.0.0.1:8000/tutors/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/tutors/
+Content-Type: application/json
+
+{
+    "tutor_name" : "Liya",
+    "subject" : "English",
+    "experience" : 4,
+    "hourly_rate" : 300
+}
+
+
+
+###
+PUT http://127.0.0.1:8000/tutors/1/
+Content-Type: application/json
+
+{
+    "tutor_name": "Nivya",
+    "subject": "Maths",
+    "experience" : 5,
+    "hourly_rate" : 350
+}
+
+
+
+###
+GET http://127.0.0.1:8000/bookings/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/bookings/
+Content-Type: application/json
+
+{
+    "student_name" : "Jisna",
+    "email" : "jisna@gmail.com",
+    "phone" : "9656996487",
+    "tutor_id" : 1,
+    "course" : "Maths",
+    "class_date" : "2026-10-29"
+}
